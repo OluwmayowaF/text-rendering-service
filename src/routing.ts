@@ -2,8 +2,7 @@ import config from 'config';
 import errorHandler from './middleware/error';
 import Q from 'q';
 import { Express, Request, Response, NextFunction } from 'express';
-
-
+import render from './api/textRenderer/textRenderer.route';
 
 import AppError from './utils/app-error';
 import { NOT_FOUND } from './utils/codes';
@@ -16,8 +15,7 @@ const prefix = config.get('api.prefix');
  * @return {Promise<void>}
  * */
 export default async (app: any | Express) => {
- 
-
+  app.use(prefix, render);
   app.use((req: Request, res: Response, next: NextFunction) => {
     const err: any = new AppError('Not Found', NOT_FOUND);
     err.status = 404;

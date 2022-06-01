@@ -6,7 +6,6 @@ import logger from 'morgan';
 import cors from 'cors';
 import Q from 'q';
 import loadRoutes from './routing';
-
 const app: Express = express();
 app.use(logger('dev'));
 app.use(express.json());
@@ -33,7 +32,6 @@ app.use((req: Request, res: Response, next: NextFunction) => {
   next();
 });
 const httpServer = http.createServer(app);
-
 const startServer = (app: Express) => {
   loadRoutes(app);
   const server = httpServer.listen(config.get('app.port'));

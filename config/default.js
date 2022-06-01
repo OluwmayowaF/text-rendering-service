@@ -5,7 +5,7 @@ const dotenv = require('dotenv').config();
 const PORT = process.env.PORT || 5000;
 module.exports = {
   app: {
-    appName: process.env.APP_NAME,
+    appName: process.env.APP_NAME || 'Text Renderer Service',
     environment: process.env.NODE_ENV || 'development',
     baseUrl: process.env.BASE_URL || `http://localhost`,
     port: PORT,
