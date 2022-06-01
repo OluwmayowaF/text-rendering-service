@@ -1,7 +1,7 @@
 {
-    "name": "node-boilerplate",
+    "name": "text-rendering-service",
     "version": "1.0.0",
-    "description": "Node project boilerplate",
+    "description": "Text Rendering Service",
     "main": "dist/src/app.js",
     "scripts": {
         "build": "tsc",
@@ -18,7 +18,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/OluwmayowaF/node-boilerplate-project.git"
+        "url": "git+https://github.com/OluwmayowaF/text-rendering-service-project.git"
     },
     "keywords": [
         "node",
@@ -28,16 +28,18 @@
     "author": "Oluwamayowa Fadairo",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/OluwmayowaF/node-boilerplate-project/issues"
+        "url": "https://github.com/OluwmayowaF/text-rendering-service-project/issues"
     },
-    "homepage": "https://github.com/OluwmayowaF/node-boilerplate-project#readme",
+    "homepage": "https://github.com/OluwmayowaF/text-rendering-service-project#readme",
     "dependencies": {
+        "canvas": "^2.9.1",
         "config": "^3.3.7",
         "cors": "^2.8.5",
         "dotenv": "^16.0.1",
         "express": "^4.18.1",
         "morgan": "^1.10.0",
         "q": "^1.5.1",
+        "text-to-image": "^5.2.0",
         "validatorjs": "^3.22.1"
     },
     "devDependencies": {

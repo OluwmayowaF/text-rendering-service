@@ -1,1 +1,2 @@
-# Node Boilerplate
+# Text rendering service
+
