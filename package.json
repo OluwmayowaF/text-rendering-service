@@ -1,0 +1,72 @@
+{
+    "name": "node-boilerplate",
+    "version": "1.0.0",
+    "description": "Node project boilerplate",
+    "main": "dist/src/app.js",
+    "scripts": {
+        "build": "tsc",
+        "debug": "npm run build && npm run watch-debug",
+        "dev": "nodemon src/app.ts --watch src --watch config",
+        "serve": "node dist/src/app.js",
+        "serve-debug": "nodemon --inspect dist/src/app.js",
+        "start": "npm run serve",
+        "test": "jest",
+        "test:watch": "jest --watch",
+        "test:coverage": "jest --coverage",
+        "prettier-format": "prettier --config .prettierrc  --write --ignore-unknown",
+        "prepare": "husky install"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/OluwmayowaF/node-boilerplate-project.git"
+    },
+    "keywords": [
+        "node",
+        "express",
+        "typescript"
+    ],
+    "author": "Oluwamayowa Fadairo",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/OluwmayowaF/node-boilerplate-project/issues"
+    },
+    "homepage": "https://github.com/OluwmayowaF/node-boilerplate-project#readme",
+    "dependencies": {
+        "config": "^3.3.7",
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.1",
+        "express": "^4.18.1",
+        "morgan": "^1.10.0",
+        "q": "^1.5.1",
+        "validatorjs": "^3.22.1"
+    },
+    "devDependencies": {
+        "@types/chai": "^4.2.19",
+        "@types/config": "0.0.41",
+        "@types/cors": "^2.8.12",
+        "@types/express": "^4.17.13",
+        "@types/jest": "^26.0.23",
+        "@types/lodash": "^4.14.182",
+        "@types/mocha": "^9.1.1",
+        "@types/morgan": "^1.9.3",
+        "@types/q": "^1.5.5",
+        "@types/validatorjs": "^3.15.0",
+        "@typescript-eslint/eslint-plugin": "^5.21.0",
+        "@typescript-eslint/parser": "^5.21.0",
+        "chai": "^4.3.4",
+        "eslint": "^8.14.0",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-jest": "^23.13.2",
+        "eslint-plugin-prettier": "^4.0.0",
+        "husky": "^7.0.4",
+        "jest": "^26.6.3",
+        "lint-staged": "^12.4.1",
+        "nodemon": "^2.0.15",
+        "prettier": "^2.6.2",
+        "ts-jest": "^26.5.6",
+        "ts-node": "^10.7.0",
+        "typescript": "^4.6.3"
+    }
+}
