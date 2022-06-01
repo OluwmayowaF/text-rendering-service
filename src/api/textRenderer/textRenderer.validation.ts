@@ -4,9 +4,9 @@ export default class TextRendererValidator {
   async render(body: any | object) {
     const rules: Validator.Rules = {
       text: 'required',
-      fontFile: 'required',
-      width: 'required| number',
-      height: 'required | number',
+      fontFamily: 'required',
+      maxWidth: 'required',
+      maxHeight: 'required',
     };
     return Validator(body, rules);
   }
